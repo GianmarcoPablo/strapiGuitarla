@@ -65,6 +65,7 @@ main {
     display: flex;
     gap: 2rem;
     margin-top: 5rem;
+    align-items: center;
 }
 @media (min-width: 768px){
     .header .navegacion{
@@ -109,6 +110,9 @@ main {
     align-items: center;
     gap: 2rem;
 }
+.footer .navegacion a:last-of-type{
+    display: none;
+}
 @media (min-width: 768px){
     .footer .navegacion{
         flex-direction: row;
@@ -124,6 +128,7 @@ main {
 .footer .copyright{
     text-align: center;
     font-size: 2.2rem;
+    font-weight: 700;
 }
 .error,
 .error-enlace{
@@ -139,4 +144,31 @@ main {
     text-transform: uppercase;
     background-color: var(--black);
     padding-block: 1rem;
+}
+.enlace{
+    text-decoration: none;
+    margin-top: 2rem;
+    display: block;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+.enlace:hover{
+    background-color: var(--primary);
+}
+
+.post .imagen{
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header .navegacion img{
+    width: 3rem;
 }

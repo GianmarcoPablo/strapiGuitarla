@@ -2,7 +2,6 @@ import { Link } from "@remix-run/react"
 const Guitarra = ({guitarra}) => {
 
     const {descripcion,imagen,precio,url,nombre} = guitarra
-    console.log()
     return (
         <div className='guitarra'>
             <img src={imagen.data.attributes.formats.medium.url} alt={`imagen guitarra ${nombre}`} />
